@@ -1,20 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sidebar</title>
+    <title> Sidebar</title>
+    <link href="https://kit.fontawesome.com/7b75a617ec.css" rel="stylesheet">
+
     <style>
-        body{
-            margin:0;
-            padding:0;
+        body {
+            margin: 0;
+            padding: 0;
+
         }
         .sidebar {
             position: fixed; 
              top: 0;
             left: 0;
             height: 100%; 
-            background-color: rgb(102, 194, 45);
+            background-color: rgb(165, 165, 248);
             width: 250px; 
             border-right: 1px solid rgb(134, 127, 127);
             padding: 0px 10px;
@@ -70,13 +73,15 @@
         .close{
             text-align: right;
             padding: 10px;
-            cursor: pointer;git 
+            cursor: pointer;
             background-color: white;
         }
 
     </style>
 </head>
 <body>
+
+
     <i class="fa-solid fa-bars side-bar" onclick="openSidebar()" id="ham-menu"></i>
 
     <div class="sidebar" id="sidebar">
@@ -110,6 +115,9 @@
         </div>
     </div>
 
+        <script src="https://kit.fontawesome.com/7b75a617ec.js" crossorigin="anonymous"></script>
+
+
     <script>
         function openSidebar(){
             const sidebarEle = document.getElementById('sidebar');
@@ -127,6 +135,5 @@
             hamburgurEle.style.visibility = 'visible';
         }
     </script>
-
 </body>
 </html>
