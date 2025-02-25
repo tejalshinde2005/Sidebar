@@ -110,5 +110,23 @@
         </div>
     </div>
 
+    <script>
+        function openSidebar(){
+            const sidebarEle = document.getElementById('sidebar');
+            sidebarEle.style.visibility='visible';
+
+            const hamburgurEle = document.getElementById('ham-menu');
+            hamburgurEle.style.visibility = 'hidden';
+        }
+
+        function closeSidebar(){
+            const sidebarEle = document.getElementById('sidebar');
+            sidebarEle.style.visibility='hidden';
+
+            const hamburgurEle = document.getElementById('ham-menu');
+            hamburgurEle.style.visibility = 'visible';
+        }
+    </script>
+
 </body>
 </html>
