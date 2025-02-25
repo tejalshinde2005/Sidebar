@@ -17,9 +17,38 @@
     </style>
 </head>
 <body>
-    <div class="sidebar"></div>
-    <div class="menu-item"></div>
-    <a href="Home.html">Home</a>
-    <p>Tejal</p>
+    <i class="fa-solid fa-bars side-bar" onclick="openSidebar()" id="ham-menu"></i>
+
+    <div class="sidebar" id="sidebar">
+        <div class="close" onclick="closeSidebar()">
+            <i class="fa-regular fa-circle-xmark"></i>
+        </div>
+
+        <div class="menu-item">
+            <i class="fa-solid fa-house menu-icon"></i>
+            <a href="home" class="menu-text">Home</a>
+        </div>
+        <div class="menu-item">
+            <i class="fa-solid fa-user menu-icon"></i>
+            <a href="home" class="menu-text">About</a>
+        </div>
+        <div class="menu-item">
+            <i class="fa-solid fa-envelope menu-icon"></i>
+            <a href="home" class="menu-text">Contact</a>
+        </div>
+        <div class="menu-item">
+            <i class="fa-solid fa-toolbox menu-icon"></i>
+            <a href="home" class="menu-text">Preferences</a>
+        </div>
+        <div class="menu-item">
+            <i class="fa-solid fa-gear menu-icon" ></i>
+             <a href="home" class="menu-text">Setting</a>
+        </div>
+        <div class="menu-item">
+            <i class="fa-solid fa-right-from-bracket menu-icon"></i>
+             <a href="home" class="menu-text">Logout</a>
+        </div>
+    </div>
+
 </body>
 </html>
